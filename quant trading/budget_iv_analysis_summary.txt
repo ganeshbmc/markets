@@ -1,0 +1,51 @@
+IV analysis for budget - NIFTY
+
+Take home points
+
+* On an average, IV peaks 2-3 days prior to budget day
+* During this time, average IV drop is 5 percentage points and Nifty moves atleast 1% and upto max 4.7% (avg 2.4%)
+
+* From peak IV to trough IV, it takes on an average 5-6 days 
+* During this time, average IV drop is 11 percentage points and Nifty moves atleast 1% and upto max 8.65% (avg 3%)
+
+Note:
+* IV data available only for last 5 years (2018-2022, both included)
+* Only current month ATM IV data analysed
+
+
+
+
+Issues to be solved before finalizing VICSS strategy (or any other vega play):
+
+* Exactly when IV will peak is not easy to predict.
+Solution - Enter on two different days before budget with half of total allocated budget on each day. 
+Drawback - may not capture full IV fall and full nifty move
+
+* Exactly when IV will bottom out after budget is announced is difficult to predict
+Solution - Exit when satisfactory profit is achieved (or when satisfactory IV fall is captured or when sufficient delta move is captured)
+Drawback - May not maximize profit
+
+
+
+
+When will this strategy mess up:
+
+If we enter the trade before IV peaks and exit before IV drop and fail to catch IV fall. Note that IV fall has happened 100% of the times in the last 5 years. And it is a well known fact that IV peaks before big events and falls after. This happens irrespective of the direction market takes, though the IV fall is better if market rallies after the event.
+
+For VICSS strategy, if we do not get fall in vega for both near week and far week expiry (specifically if IV falls more for near week) and also market doesnt move, then we can have loss.
+
+
+
+
+VICSS strategy in nifty for budget:
+
+Four legged stragegy
+
+Feb 9 (near) expiry: 
+Buy ATM call and buy ATM put (long straddle)
+
+Feb 23 (far) expiry:
+Sell ATM call and sell ATM put (short straddle)
+
+Note: make sure the deltas match for long and short straddles and we have a near delta zero overall.
+
