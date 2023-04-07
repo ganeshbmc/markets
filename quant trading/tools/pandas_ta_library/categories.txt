@@ -1,0 +1,9 @@
+['candles',
+ 'cycles',
+ 'momentum',
+ 'overlap',
+ 'performance',
+ 'statistics',
+ 'trend',
+ 'volatility',
+ 'volume']
