@@ -23,4 +23,5 @@ def get_data_using_breeze(token: int, stock_code: str, interval: str, from_date:
     df = df[['datetime', 'open', 'high', 'low', 'close', 'volume']]
     df["datetime"] = pd.to_datetime(df["datetime"], format="%Y-%m-%d %H:%M:%S")
     df[['open', 'high', 'low', 'close', 'volume']] = df[['open', 'high', 'low', 'close', 'volume']].astype(float)
+    df.set_index("datetime", inplace=True)
     return df
